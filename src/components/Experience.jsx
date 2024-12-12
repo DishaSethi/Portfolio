@@ -29,7 +29,7 @@ const Experience = () => {
   return (
    <section className="px-6 py-10" id="experience">
     <h2 className="text-4xl md:text-6xl font-medium tracking-tight mb-10"> 
-        Work Experience
+        Work Contributions
     </h2>
     <div className="h1 w-20 mb-8 bg-white">
 

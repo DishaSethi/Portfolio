@@ -1,7 +1,7 @@
 // import React from 'react';
-import { motion } from "framer-motion";
+import { motion, useAnimate } from "framer-motion";
 import { HERO_CONTENT } from "../constants";
-import jason from "../assets/jason-root.webp";
+import anime from "../assets/anime.jpeg";
 
 import { RiGithubFill,RiLinkedinFill } from "react-icons/ri";
 
@@ -54,12 +54,12 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
         variants={imageVariants}>
-            <img src={jason} alt="Jason Root" width={400} height={400}
+            <img src={anime} alt="Anime Coding" width={400} height={400}
             className="rounded-3xl" />
 
 
             <div className="flex space-x-6 mt-6 justify-center">
-                <motion.a href="https://www.linkedin.com"
+                <motion.a href="https://www.linkedin.com/in/disha-sethi-068107220"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -73,7 +73,7 @@ const Hero = () => {
                 </motion.a>
 
                 <motion.a
-              href="https://github.com/jason-root"
+              href="https://github.com/DishaSethi"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
