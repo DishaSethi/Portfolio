@@ -32,7 +32,7 @@ export const HERO_CONTENT = {
   description:
     "",
   resumeLinkText: "Download Resume",
-  resumeLink: "/resume.pdf",
+  resumeLink: "./DishaSethiResume.pdf",
 };
 
 export const PROJECTS = [
