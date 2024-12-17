@@ -15,10 +15,11 @@ import person6 from "../assets/person6.webp";
 export const LINKS = [
   { href: "#work", label: "Work" },
   { href: "#technologies", label: "Technologies" },
+  { href: "#about", label: "About" },
   { href: "#experience", label: "Contributions" },
 
   // { href: "#testimonials", label: "Testimonials" },
-  { href: "#about", label: "About" },
+
  
   // { href: "#education", label: "Education" },
   ,
