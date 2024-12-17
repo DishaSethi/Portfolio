@@ -5,8 +5,10 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Experience from "./components/Experience";
-import Testimonial from "./components/Testimonial";
+import Technologies from "./components/Technologies";
+// import Testimonial from "./components/Testimonial";
 import Contacts from "./components/Contacts";
+
 
 
 const App = () => {
@@ -18,6 +20,7 @@ const App = () => {
     <Navbar/>
     <Hero/>
     <Projects/>
+    <Technologies/>
     <About/>
     <Experience/>
     {/* <Testimonial/> */}

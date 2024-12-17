@@ -14,7 +14,7 @@ import person6 from "../assets/person6.webp";
 
 export const LINKS = [
   { href: "#work", label: "Work" },
-  { href: "#skills", label: "Skills" },
+  { href: "#technologies", label: "Technologies" },
   { href: "#experience", label: "Contributions" },
 
   // { href: "#testimonials", label: "Testimonials" },
