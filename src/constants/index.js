@@ -1,6 +1,7 @@
-import projects1 from "../assets/projects1.webp";
-import projects2 from "../assets/projects2.webp";
-import projects3 from "../assets/projects3.webp";
+// import projects1 from "../assets/projects1.webp";
+import projects1 from "../assets/project1.png";
+import projects2 from "../assets/project3.png";
+import projects3 from "../assets/project2.png";
 // import projects4 from "../assets/projects4.webp";
 // import projects5 from "../assets/projects5.webp";
 // import projects6 from "../assets/projects6.webp";
@@ -33,7 +34,7 @@ export const HERO_CONTENT = {
   description:
     "",
   resumeLinkText: "Download Resume",
-  resumeLink: "./DishaSethiResume.pdf",
+  resumeLink: "./Disha_Resume.pdf",
 };
 
 export const PROJECTS = [
@@ -50,10 +51,10 @@ export const PROJECTS = [
     link: "https://github.com/DishaSethi/Crypto-Palace",
   },
   {
-    name: "C-Chat",
-    description: "Built a real-time chat application using React and Socket.IO with a room-based chat feature, enabling multiple users to communicate seamlessly.",
+    name: "SmartEats",
+    description: "A full-stack food delivery application built with the MERN (MongoDB, Express, React, Node.js) stack. This platform provides a seamless food ordering experience for customers and a powerful admin dashboard for managing orders, and more.",
     image: projects3,
-    link: "https://github.com/DishaSethi/Basic-Chat-App",
+    link: "https://github.com/DishaSethi/Food-Delivery-Website",
   },
   // {
   //   name: "DevDeck",
@@ -85,8 +86,8 @@ export const ABOUT_CONTENT = {
 
 export const EXPERIENCES = [
   {
-    yearRange: "2024 — Now",
-    title: "Tech Lead at Finance And Economics Society",
+    yearRange: "2024 — Now (PartTime)",
+    title: "Tech Lead at Finance And Economics Society (IGDTUW)",
    
     description: [
       "Led the design and implementation of a new Games Section, boosting team efficiency by 30%",
@@ -95,7 +96,7 @@ export const EXPERIENCES = [
   },
   {
     yearRange: "2023 — 2024",
-    title: "Technical Member at Finance And Economics Society.",
+    title: "Technical Member at Finance And Economics Society(IGDTUW)",
   
     description: [
       "Contributed to the official society website in 2023, enhancing the UI of events, home, and resources pages using React, HTML, CSS, and JavaScript, increasing user interaction by 20%",

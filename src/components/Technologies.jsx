@@ -1,6 +1,7 @@
-import { SiMongodb, SiExpress, SiHtml5, SiCss3, SiJavascript, SiMysql, SiFigma, SiSocketdotio } from "react-icons/si";
+import { SiMongodb, SiExpress, SiHtml5, SiCss3, SiJavascript, SiMysql, SiFigma, SiSocketdotio,SiTailwindcss } from "react-icons/si";
 import { RiReactjsLine } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Technologies = () => {
     return (
@@ -8,66 +9,34 @@ const Technologies = () => {
             <h2 className="my-20 text-center text-4xl">Technologies</h2>
 
             <div className="flex flex-wrap items-center justify-center gap-8">
-
-                {/* MongoDB */}
-                <div className="p-4 flex flex-col items-center">
-                    <SiMongodb className="text-7xl text-green-500" />
-                    <p className="text-sm mt-2 text-white-600">MongoDB</p>
-                </div>
-
-                {/* React.js */}
-                <div className="p-4 flex flex-col items-center">
-                    <RiReactjsLine className="text-7xl text-cyan-500" />
-                    <p className="text-sm mt-2 text-white-600">React.js</p>
-                </div>
-
-                {/* Node.js */}
-                <div className="p-4 flex flex-col items-center">
-                    <FaNodeJs className="text-7xl text-green-500" />
-                    <p className="text-sm mt-2 text-white-600">Node.js</p>
-                </div>
-
-                {/* Express.js */}
-                <div className="p-4 flex flex-col items-center">
-                    <SiExpress className="text-7xl text-gray-700" />
-                    <p className="text-sm mt-2 text-white-600">Express.js</p>
-                </div>
-
-                {/* HTML5 */}
-                <div className="p-4 flex flex-col items-center">
-                    <SiHtml5 className="text-7xl text-orange-500" />
-                    <p className="text-sm mt-2 text-white-600">HTML5</p>
-                </div>
-
-                {/* CSS3 */}
-                <div className="p-4 flex flex-col items-center">
-                    <SiCss3 className="text-7xl text-blue-500" />
-                    <p className="text-sm mt-2 text-white-600">CSS3</p>
-                </div>
-
-                {/* JavaScript */}
-                <div className="p-4 flex flex-col items-center">
-                    <SiJavascript className="text-7xl text-yellow-500" />
-                    <p className="text-sm mt-2 text-white-600">JavaScript</p>
-                </div>
-
-                {/* MySQL */}
-                <div className="p-4 flex flex-col items-center">
-                    <SiMysql className="text-7xl text-blue-800" />
-                    <p className="text-sm mt-2 text-white-600">MySQL</p>
-                </div>
-
-                {/* Figma */}
-                <div className="p-4 flex flex-col items-center">
-                    <SiFigma className="text-7xl text-purple-500" />
-                    <p className="text-sm mt-2 text-white-600">Figma</p>
-                </div>
-
-                {/* Socket.IO */}
-                <div className="p-4 flex flex-col items-center">
-                    <SiSocketdotio className="text-7xl text-gray-600" />
-                    <p className="text-sm mt-2 text-white-600">Socket.IO</p>
-                </div>
+                {[ 
+                    { icon: <SiMongodb className="text-7xl text-green-500" />, label: "MongoDB" },
+                    { icon: <RiReactjsLine className="text-7xl text-cyan-500" />, label: "React.js" },
+                    { icon: <FaNodeJs className="text-7xl text-green-500" />, label: "Node.js" },
+                    { icon: <SiExpress className="text-7xl text-gray-700" />, label: "Express.js" },
+                    { icon: <SiHtml5 className="text-7xl text-orange-500" />, label: "HTML5" },
+                    { icon: <SiCss3 className="text-7xl text-blue-500" />, label: "CSS3" },
+                    { icon: <SiJavascript className="text-7xl text-yellow-500" />, label: "JavaScript" },
+                    { icon: <SiMysql className="text-7xl text-blue-800" />, label: "MySQL" },
+                    { icon: <SiFigma className="text-7xl text-purple-500" />, label: "Figma" },
+                    { icon: <SiSocketdotio className="text-7xl text-gray-600" />, label: "Socket.IO" },
+                    { icon: <SiTailwindcss className="text-7xl text-cyan-600" />, label: "TailwindCSS" }
+                ].map((tech, index) => (
+                    <motion.div 
+                        key={index} 
+                        className="p-4 flex flex-col items-center"
+                        animate={{ y: [0, -8, 0, 8, 0] }}
+                        transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                            delay: index * 0.2 // Creates a wave effect
+                        }}
+                    >
+                        {tech.icon}
+                        <p className="text-sm mt-2 text-white-600">{tech.label}</p>
+                    </motion.div>
+                ))}
             </div>
         </div>
     );
